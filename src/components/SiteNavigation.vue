@@ -58,6 +58,7 @@ import BaseModal from "./BaseModal.vue";
 const savedCities = ref([]);
 const route = useRoute();
 const router = useRouter();
+
 const addCity = () => {
     if(localStorage.getItem('savedCities')) {
         savedCities.value = JSON.parse(localStorage.getItem('savedCities'));
